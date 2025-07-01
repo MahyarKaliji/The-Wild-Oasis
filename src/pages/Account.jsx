@@ -6,12 +6,12 @@ function Account() {
     <>
       <Heading as="h1">Update your account</Heading>
 
-      <Row type="vertical">
+      <Row>
         <Heading as="h3">Update user data</Heading>
         <p>Update user data form</p>
       </Row>
 
-      <Row type="vertical">
+      <Row>
         <Heading as="h3">Update password</Heading>
         <p>Update user password form</p>
       </Row>

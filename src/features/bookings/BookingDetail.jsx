@@ -30,7 +30,7 @@ function BookingDetail() {
 
   return (
     <>
-      <Row type="horizontal">
+      <Row $type="horizontal">
         <HeadingGroup>
           <Heading as="h1">Booking #X</Heading>
           <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
@@ -41,7 +41,7 @@ function BookingDetail() {
       <BookingDataBox booking={booking} />
 
       <ButtonGroup>
-        <Button variation="secondary" onClick={moveBack}>
+        <Button $variation="secondary" onClick={moveBack}>
           Back
         </Button>
       </ButtonGroup>

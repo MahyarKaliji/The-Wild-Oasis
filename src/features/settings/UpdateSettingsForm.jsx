@@ -86,10 +86,6 @@ function UpdateSettingsForm() {
           onBlur={(e) => handleUpdate(e, "breakfastPrice")}
         />
       </FormRow>
-      {/* 
-      <Button variation="primary" size="medium">
-        Save
-      </Button> */}
     </Form>
   );
 }
