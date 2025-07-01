@@ -12,7 +12,6 @@ export async function getCabins() {
 }
 
 export async function createEditCabin(newCabin, id) {
-  console.log(newCabin, id);
 
   const hasImagePath = newCabin.image?.startsWith?.(supabaseUrl);
 
@@ -65,12 +64,7 @@ export async function createEditCabin(newCabin, id) {
 export async function deleteCabin(id) {
   const { data, error } = await supabase.from("cabins").delete().eq("id", id);
 
-  console.log(id);
-  console.log(data);
-  console.log(error);
-
   if (error) {
-    // console.error(error);
     throw new Error("Cabins could not be deleted");
   }
 
