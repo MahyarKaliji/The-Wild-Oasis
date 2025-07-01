@@ -59,7 +59,6 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
       onSubmit={handleSubmit(onSubmit, onError)}
       $type={onCloseModal ? "modal" : "regular"}
     >
-      {isCreating && <span>Is Loading...</span>}
       <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"

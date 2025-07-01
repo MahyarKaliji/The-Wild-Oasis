@@ -44,7 +44,6 @@ function CreateCabinForm() {
 
   return (
     <Form onSubmit={handleSubmit(onSubmit, onError)}>
-      {isCreating && <span>Is Loading...</span>}
       <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"
