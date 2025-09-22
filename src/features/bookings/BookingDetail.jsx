@@ -8,6 +8,7 @@ import Heading from "../../ui/Heading";
 import ButtonText from "../../ui/ButtonText";
 import ButtonGroup from "../../ui/ButtonGroup";
 import BookingDataBox from "./BookingDataBox";
+import Empty from "../../ui/Empty"
 
 import { useBooking } from "./useBooking";
 import { useNavigate } from "react-router-dom";
@@ -32,6 +33,7 @@ function BookingDetail() {
   const navigate = useNavigate();
 
   if (isLoading) return <Spinner />;
+  if (!booking) return <Empty resourceName="booking" />;
 
   const {
     status,
